@@ -1,6 +1,6 @@
 CC = tcc
 NAME = status
-CFLAGS = -Wall
+CFLAGS = -Wall -Wextra -pedantic
 
-$(NAME): status.c
+$(NAME): status.c config.h
 	$(CC) -o $(NAME) $(CFLAGS) $<
